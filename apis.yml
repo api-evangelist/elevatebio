@@ -1,8 +1,27 @@
 aid: elevatebio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/elevatebio.png
 name: ElevateBio
-description: 'ElevateBio is a company surfaced as a portfolio company of softbank-vision-fund and added
-  to the API Evangelist network as a stub for enrichment. Sector: health-tech. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'ElevateBio is an advanced therapies technology company and contract development
+  and manufacturing organization (CDMO) for cell and gene therapies, headquartered in Waltham,
+  Massachusetts. Through its BaseCamp cGMP manufacturing and process-development business
+  and its centers of excellence, ElevateBio provides end-to-end capabilities spanning gene
+  editing, viral vectors (AAV and lentivirus), mRNA and RNA therapeutics, induced pluripotent
+  stem cells (iPSCs), analytical and process development, and regulatory CMC support, helping
+  partners advance genetic medicines from concept through commercialization. Surfaced as a
+  portfolio company of the SoftBank Vision Fund and profiled in the API Evangelist network,
+  ElevateBio operates as a science- and manufacturing-driven organization rather than a
+  public API provider; this profile captures its identity and domain security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/elevatebio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +31,45 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Health Tech
+- Cell and Gene Therapy
+- Biotechnology
+- CDMO
+- Genetic Medicine
+- Manufacturing
+- Life Sciences
 apis: []
+common:
+- type: DomainSecurity
+  url: security/elevatebio-domain-security.yml
+- type: LLMsTxt
+  url: llms/elevatebio-llms.txt
+- type: WellKnown
+  url: well-known/elevatebio-well-known.yml
+- type: Website
+  url: https://www.elevate.bio
+- type: About
+  url: https://elevate.bio/about/
+- type: Blog
+  url: https://elevate.bio/elevated-insights/
+- type: Careers
+  url: https://elevate.bio/about/careers/
+- type: Support
+  url: https://elevate.bio/contact/
+- type: PrivacyPolicy
+  url: https://elevate.bio/privacy-cookie-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/elevatebio
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
